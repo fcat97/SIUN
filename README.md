@@ -15,6 +15,7 @@ From top to bottom are images restored by Pan et al., Nah et al., Tao et al., Zh
 They can be viewed in Lai dataset with their names, from left to right: boy_statue, pietro, street4 and text1.
 <br>
 ## Prerequisites
+- Create a custom environment for python. `conda create -n "deblurSIUN" python=3.6.8` and activate it `conda activate deblurSIUN`
 - Please refer to "/code/requirements.txt".
 - If you encounter any error in `base_layer.py` or `saving.py` file, replace with the respected file from patch folder.
 - Install `tensorflow-gpu` instead of `tensorflow`, if you have GPU.
