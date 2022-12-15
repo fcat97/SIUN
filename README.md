@@ -15,12 +15,14 @@ From top to bottom are images restored by Pan et al., Nah et al., Tao et al., Zh
 They can be viewed in Lai dataset with their names, from left to right: boy_statue, pietro, street4 and text1.
 <br>
 ## Prerequisites
-Please refer to "/code/requirements.txt".
+- Please refer to "/code/requirements.txt".
+- If you encounter any error in `base_layer.py` or `saving.py` file, replace with the respected file from patch folder.
+- Install `tensorflow-gpu` instead of `tensorflow`, if you have GPU.
 <br>
 ## Installation
 
 ```
-git clone https://github.com/minyuanye/SIUN.git
+git clone https://github.com/fCat97/SIUN.git
 cd code
 ```
 
@@ -34,6 +36,7 @@ You can always add '--gpu=<gpu_id>' to specify GPU ID, the default ID is 0.<br>
 2. For deblurring all images in a folder:<br>
 **python deblur.py --apply --dir-path='</testpath/testDir>'**<br>
 Add '--result-dir=</output_path>' to specify output path. If it is not specified, the default path is './output'.<br>
+Note: source must be inside a path. TestImage having the same deblur.py directory won't work. So put test image inside a folder, for example `./input/`.
 
 3. For testing the model:<br>
 **python deblur.py --test**<br>
